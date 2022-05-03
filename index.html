@@ -7,9 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+       
         a:link {
             color: blue
         }
+        div p:last-of-type::after {
+            content: "...";
+        }
+
 
         div::first-letter {
             font-size: 200%;
@@ -20,40 +25,49 @@
         div:nth-child(2n) {
             background-color: grey;
             display: inline-block;
+            margin-bottom: 36px;
 
         }
 
         div:nth-child(2n+1) {
             background-color: white;
+            margin-bottom: 36px;
 
         }
 
-        div p:last-of-type::after {
-            content: "...";
-        }
-
+      
         body {
+            text-align: center;
             background-color: rgb(75, 73, 73);
+        }
+        div {
+           
+            margin-top: 36px;
+            
         }
 
         p {
-            margin-bottom: 12px;
+
+            margin-top: 12px;
         }
 
-        div {
-            margin-bottom: 36px;
+      
+        #fondo{
+            background-color: rgb(75, 73, 73);
         }
     </style>
 </head>
 
 <body>
+    
     <p>Soldadito Marinero</p>
+    <div id="fondo">
     <div>
         <p>Él camina despacito que las prisas no son buenas</p>
         <p>En su brazo dobladita, con cuidado la chaqueta</p>
         <p>Luego pasa por la calle dónde los chavales juegan</p>
         <p>Él también quiso ser niño pero le pilló la guerra</p>
-        <div>
+    </div>
 
             <div>
                 <p>Soldadito marinero conociste a una sirena</p>
@@ -81,8 +95,13 @@
                 <p>Dime por que estas buscando una lágrima en la arena</p>
                 <p>Después de un invierno malo</p>
             </div>
-            <p><a href="https://www.letras.com/fito-fitipaldis/">Fuente</a></p>
-            <p>Fito y Fitipaldis</p>
+
+            
+            
+            
+        </div>
+        <p><a href="https://www.letras.com/fito-fitipaldis/">Fuente</a></p>
+        <p>Fito y Fitipaldis</p>
 </body>
 
 </html>
