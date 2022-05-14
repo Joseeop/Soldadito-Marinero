@@ -5,16 +5,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Letra Soldadito Marinero - fito-fitipaldis</title>
     <style>
-       
+
+#PULSA{
+    margin-left: 50vw;
+    margin-right: 50vw;
+        background-color:grey ;
+        border-radius: 5%;
+        border: solid;
+        border-color: black;
+        position: center;
+      }
+
+      
+.modal-contenido{
+    height: 50vh;
+  width:60vw;
+  padding: 10px 20px;
+  margin: 10% auto;
+  position: center;
+  
+  /*text-align: center; creo que es mejor que el botón de "Volver"
+  quede arriba a la izquierda, por eso hago h2 y h3 abajo*/
+  
+}
+.modal{
+  background-color: rgba(27, 107, 227, 0.8);
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  opacity:0;
+  pointer-events: none;
+  transition: all 1s;
+}
+#miModal:target{
+  opacity:1;
+  pointer-events:auto;
+}
+
+
+
         a:link {
             color: blue
+            
         }
-        div p:last-of-type::after {
-            content: "...";
-        }
-
 
         div::first-letter {
             font-size: 200%;
@@ -25,49 +62,45 @@
         div:nth-child(2n) {
             background-color: grey;
             display: inline-block;
-            margin-bottom: 36px;
 
         }
 
         div:nth-child(2n+1) {
             background-color: white;
-            margin-bottom: 36px;
 
         }
 
-      
+        div p:last-of-type::after {
+            content: "...";
+        }
+
         body {
-            text-align: center;
             background-color: rgb(75, 73, 73);
-        }
-        div {
-           
-            margin-top: 36px;
-            
         }
 
         p {
-
-            margin-top: 12px;
+            margin-bottom: 12px;
         }
 
-      
-        #fondo{
-            background-color: rgb(75, 73, 73);
+        div {
+            margin-bottom: 36px;
+        }
+        h2,h3{
+            text-align: center;
+           
+            
         }
     </style>
 </head>
 
 <body>
-    
     <p>Soldadito Marinero</p>
-    <div id="fondo">
     <div>
         <p>Él camina despacito que las prisas no son buenas</p>
         <p>En su brazo dobladita, con cuidado la chaqueta</p>
         <p>Luego pasa por la calle dónde los chavales juegan</p>
         <p>Él también quiso ser niño pero le pilló la guerra</p>
-    </div>
+        <div>
 
             <div>
                 <p>Soldadito marinero conociste a una sirena</p>
@@ -94,14 +127,20 @@
                 <p>Después de un invierno malo, una mala primavera</p>
                 <p>Dime por que estas buscando una lágrima en la arena</p>
                 <p>Después de un invierno malo</p>
-            </div>
+            
+            </div></br>
 
+            <a id="PULSA" href="#miModal">HOLA</a>
+            <div id="miModal" class="modal">
+              <div class="modal-contenido">
+                <a href="#">volver</a>  
+                <h2>Fito y Fitipaldis</h2>
+                <h3><a href="https://www.letras.com/fito-fitipaldis/614056/">Fuente</a></h3>
+                
+              </div>  
+            </div>
             
-            
-            
-        </div>
-        <p><a href="https://www.letras.com/fito-fitipaldis/614056/">Fuente</a></p>
-        <p>Fito y Fitipaldis</p>
+           
 </body>
 
 </html>
